@@ -89,7 +89,7 @@ FedGNN-TD3-Microgrid-Energy-Management/
     └── paper_summary.md       ← Methodology summary with equation references
 
 
----
+
 
 ## Datasets
 
@@ -101,7 +101,7 @@ Three real-world datasets are required. See [`data/README.md`](data/README.md) f
 | 2 | **AEMO 2018 NEM Dispatch** | Australian Energy Market Operator | Wind farm dispatch (33 farms), solar dispatch (28 farms), 5-min resolution → price proxy |
 | 3 | **IEEE 33-Bus Benchmark** | Dolatabadi et al., IEEE Trans. Power Syst. 2020 | Bus loads, branch impedances, 24h demand/RES profiles, generator buses |
 
----
+
 
 Installation
 
@@ -121,33 +121,33 @@ pip install -r requirements.txt
 
 Quick Start
 
-### 1. Download datasets
+1. Download datasets
 Follow instructions in [`data/README.md`](data/README.md) and place files in `data/raw/`.
 
-### 2. Run with defaults (rule-based fallback, no PyTorch needed)
-```bash
+ 2. Run with defaults (rule-based fallback, no PyTorch needed)
+bash
 python main.py
-```
 
-### 3. Train full TD3 model (requires PyTorch)
-```bash
+
+3. Train full TD3 model (requires PyTorch)
+bash
 python main.py --train --fed_rounds 50 --local_episodes 10 --seed 42
-```
 
-### 4. Evaluate and plot only
-```bash
+
+4. Evaluate and plot only
+bash
 python main.py --evaluate --no_figures=False
-```
+
 
 All figures are written to `results/figures/` and tables to `results/tables/`.
 
----
 
-## Configuration
+
+Configuration
 
 All hyperparameters are in [`config.yaml`](config.yaml). Key settings:
 
-```yaml
+yaml
 gnn:
   n_layers: 2
   hidden_dim: 64
