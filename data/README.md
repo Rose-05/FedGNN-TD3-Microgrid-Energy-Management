@@ -73,5 +73,5 @@ data/
 │   ├── 2012-2013_Solar_home_electricity_data_v2.csv   ← Ausgrid
 │   ├── aemo_2018.csv                                   ← AEMO
 │   └── IEEE_33.xlsx                                    ← IEEE 33-bus
-└── processed/                                          ← auto-generated
+
 ```
