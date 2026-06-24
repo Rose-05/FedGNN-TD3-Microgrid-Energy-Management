@@ -89,15 +89,17 @@ FedGNN-TD3-Microgrid-Energy-Management/
     └── paper_summary.md       ← Methodology summary with equation references
 
 
-Datasets
+## Datasets
 
 Three real-world datasets are required. See [`data/README.md`](data/README.md) for download links and placement instructions.
 
 | # | Dataset | Source | Used For |
 |---|---|---|---|
-| 1 | Ausgrid Solar Home Electricity Data 2012–2013| Ausgrid (Australia) | Solar PV generation (GG) and residential load (GC) for 300 customers, 30-min resolution |
-| 2 | AEMO 2018 NEM Dispatch| Australian Energy Market Operator | Wind farm dispatch (33 farms), solar dispatch (28 farms), 5-min resolution → price proxy |
-| 3 | IEEE 33-Bus Benchmark| Dolatabadi et al., IEEE Trans. Power Syst. 2020 | Bus loads, branch impedances, 24h demand/RES profiles, generator buses |
+| 1 | **Ausgrid Solar Home Electricity Data 2012–2013** | Ausgrid (Australia) | Solar PV generation (GG) and residential load (GC) for 300 customers, 30-min resolution |
+| 2 | **AEMO 2018 NEM Dispatch** | Australian Energy Market Operator | Wind farm dispatch (33 farms), solar dispatch (28 farms), 5-min resolution → price proxy |
+| 3 | **IEEE 33-Bus Benchmark** | Dolatabadi et al., IEEE Trans. Power Syst. 2020 | Bus loads, branch impedances, 24h demand/RES profiles, generator buses |
+
+---
 
 Installation
 
