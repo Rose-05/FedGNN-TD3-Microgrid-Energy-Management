@@ -78,13 +78,10 @@ FedGNN-TD3-Microgrid-Energy-Management/
 │   └── tables/                ← Generated results tables (CSV)
 │
 ├── scripts/
-│   ├── preprocess_ausgrid.py  ← Load and preprocess all three datasets
-│   ├── run_experiments.py     ← Run full ablation study and benchmark comparisons
-│   └── plot_results.py        ← Reproduce all paper figures from saved results
-│
-└── docs/
-    ├── architecture.png       ← Framework architecture diagram (placeholder — replace with Fig. 1)
-    └── paper_summary.md       ← Methodology summary with equation references
+  ├── preprocess_ausgrid.py  ← Load and preprocess all three datasets
+  ├── run_experiments.py     ← Run full ablation study and benchmark comparisons
+  └── plot_results.py        ← Reproduce all paper figures from saved results
+
 
 ## Datasets
 
