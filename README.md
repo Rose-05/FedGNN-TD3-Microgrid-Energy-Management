@@ -4,7 +4,9 @@ FedGNN-TD3: Federated Graph Neural Network and Twin Delayed Deep Reinforcement L
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> Paper: Rose Sadiki Lyimo, Pengfei Zhao, Weihao Hu — *FedGNN-TD3: A Federated Graph Neural Network and Twin Delayed Deep Reinforcement Learning Framework for Distributed Renewable Energy Management — University of Electronic Science and Technology of China (UESTC), Chengdu, China.
+**Paper:** Rose Sadiki Lyimo, Pengfei Zhao, Weihao Hu — *FedGNN-TD3: A Federated Graph Neural Network and Twin Delayed Deep Reinforcement Learning Framework for Distributed Renewable Energy Management* — University of Electronic Science and Technology of China (UESTC), Chengdu, China.
+
+---
 
 
 Overview
