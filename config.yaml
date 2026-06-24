@@ -1,0 +1,72 @@
+# ============================================================
+#  FedGNN-TD3 Configuration
+#  All hyperparameters from Table I of the paper
+# ============================================================
+
+data:
+  ausgrid: "data/raw/2012-2013_Solar_home_electricity_data_v2.csv"
+  aemo:    "data/raw/aemo_2018.csv"
+  ieee33:  "data/raw/IEEE_33.xlsx"
+  processed_dir: "data/processed"
+
+system:
+  n_mg: 6
+  customers_per_mg: 50
+  n_steps: 96
+  dt: 0.25
+  base_mva: 100.0
+  base_kv: 12.66
+
+ess:
+  capacity_kwh: 500.0
+  max_power_kw: 100.0
+  eta_ch: 0.95
+  eta_dis: 0.95
+  soc_min: 0.20
+  soc_max: 0.90
+
+gnn:
+  n_layers: 2
+  hidden_dim: 64
+  embed_dim: 64
+  activation: relu
+  aggregation: mean
+
+td3:
+  actor_lr: 3.0e-4
+  critic_lr: 3.0e-4
+  gamma: 0.99
+  tau: 0.005
+  policy_delay: 2
+  expl_noise: 0.1
+  policy_noise: 0.2
+  noise_clip: 0.5
+  batch_size: 256
+  buffer_size: 1000000
+  hidden_dim: 256
+
+federated:
+  rounds: 50
+  local_episodes: 10
+  local_updates: 96
+
+reward:
+  alpha: 1.0
+  beta: 0.5
+  delta: 50.0
+
+uncertainty:
+  solar_beta_a: 2.0
+  solar_beta_b: 2.0
+  wind_weibull_k: 2.1
+  load_gaussian_std: 0.05
+
+training:
+  seed: 42
+  n_seeds: 10
+  eval_days: 30
+
+output:
+  figures_dir: "results/figures"
+  tables_dir:  "results/tables"
+  figure_dpi:  300

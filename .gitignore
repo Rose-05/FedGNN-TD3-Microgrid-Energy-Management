@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Data (large files — not committed)
+data/raw/*.csv
+data/raw/*.xlsx
+data/processed/*
+
+# Keep folder structure
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Results (generated, not committed)
+results/figures/*.png
+results/tables/*.csv
+results/tables/*.json
+!results/figures/.gitkeep
+!results/tables/.gitkeep
+
+# Checkpoints
+*.pt
+*.pth
+*.ckpt
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
