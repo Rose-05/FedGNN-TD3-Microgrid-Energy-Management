@@ -4,11 +4,9 @@ FedGNN-TD3: Federated Graph Neural Network and Twin Delayed Deep Reinforcement L
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Paper:** Rose Sadiki Lyimo, Pengfei Zhao, Weihao Hu — *FedGNN-TD3: A Federated Graph Neural Network and Twin Delayed Deep Reinforcement Learning Framework for Distributed Renewable Energy Management* — University of Electronic Science and Technology of China (UESTC), Chengdu, China.
+**Paper:** Rose Sadiki Lyimo, Pengfei Zhao, Weihao Hu-*FedGNN-TD3: A Federated Graph Neural Network and Twin Delayed Deep Reinforcement Learning Framework for Distributed Renewable Energy Management*-University of Electronic Science and Technology of China (UESTC), Chengdu, China.
 
 ---
-
-
 Overview
 
 FedGNN-TD3 is a privacy-preserving distributed energy management framework for interconnected multi-microgrid systems. It integrates three complementary technologies:
@@ -88,9 +86,6 @@ FedGNN-TD3-Microgrid-Energy-Management/
     ├── architecture.png       ← Framework architecture diagram (placeholder — replace with Fig. 1)
     └── paper_summary.md       ← Methodology summary with equation references
 
-
-
-
 ## Datasets
 
 Three real-world datasets are required. See [`data/README.md`](data/README.md) for download links and placement instructions.
@@ -100,8 +95,6 @@ Three real-world datasets are required. See [`data/README.md`](data/README.md) f
 | 1 | **Ausgrid Solar Home Electricity Data 2012–2013** | Ausgrid (Australia) | Solar PV generation (GG) and residential load (GC) for 300 customers, 30-min resolution |
 | 2 | **AEMO 2018 NEM Dispatch** | Australian Energy Market Operator | Wind farm dispatch (33 farms), solar dispatch (28 farms), 5-min resolution → price proxy |
 | 3 | **IEEE 33-Bus Benchmark** | Dolatabadi et al., IEEE Trans. Power Syst. 2020 | Bus loads, branch impedances, 24h demand/RES profiles, generator buses |
-
-
 
 Installation
 
@@ -118,18 +111,17 @@ source .venv/bin/activate        # Linux/macOS
 Install dependencies
 pip install -r requirements.txt
 
-
 Quick Start
 
 1. Download datasets
-Follow instructions in [`data/README.md`](data/README.md) and place files in `data/raw/`.
+Follow instructions in ["data/README.md"](data/README.md) and place files in "data/raw/".
 
  2. Run with defaults (rule-based fallback, no PyTorch needed)
 bash
 python main.py
 
 
-3. Train full TD3 model (requires PyTorch)
+3. Train a full TD3 model (requires PyTorch)
 bash
 python main.py --train --fed_rounds 50 --local_episodes 10 --seed 42
 
@@ -137,11 +129,7 @@ python main.py --train --fed_rounds 50 --local_episodes 10 --seed 42
 4. Evaluate and plot only
 bash
 python main.py --evaluate --no_figures=False
-
-
-All figures are written to `results/figures/` and tables to `results/tables/`.
-
-
+All figures are written to "results/figures/" and tables to "results/tables/".
 
 Configuration
 
