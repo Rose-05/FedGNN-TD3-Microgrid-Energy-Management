@@ -12,10 +12,10 @@ Overview
 FedGNN-TD3 is a privacy-preserving distributed energy management framework for interconnected multi-microgrid systems. It integrates three complementary technologies:
 
 | Component | Role |
-
-| Graph Neural Network (GNN)| Captures spatial dependencies and power exchange relationships among microgrids via topology-aware message passing |
-| Twin Delayed DDPG (TD3)| Learns robust continuous control policies for ESS dispatch, renewable utilisation, and P2P energy trading under stochastic generation and load |
-| Federated Learning (FL)| Enables collaborative policy improvement across microgrids without sharing raw operational data — preserving privacy |
+|---|---|
+| **Graph Neural Network (GNN)** | Captures spatial dependencies and power exchange relationships among microgrids via topology-aware message passing |
+| **Twin Delayed DDPG (TD3)** | Learns robust continuous control policies for ESS dispatch, renewable utilisation, and P2P energy trading under stochastic generation and load |
+| **Federated Learning (FL)** | Enables collaborative policy improvement across microgrids without sharing raw operational data — preserving privacy |
 
 The interconnected microgrid network is modelled as a graph of a modified IEEE 33-bus radial distribution system, partitioned into six microgrids, and evaluated using real-world renewable generation and load data from the Ausgrid and AEMO datasets.
 
