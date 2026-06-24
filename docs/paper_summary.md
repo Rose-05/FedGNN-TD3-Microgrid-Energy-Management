@@ -177,14 +177,4 @@ V_rate = N_viol / N_total * 100%
 
 **Training time (Eq. 24):**
 ```
-T_train = t_end - t_start
-```
-
-→ Implemented in: `training/evaluate.py`
-
----
-
-## Hyperparameters (Table I)
-
-See [`config.yaml`](../config.yaml) for the complete, exact set of
-values used in the paper experiments.
+T_tr
