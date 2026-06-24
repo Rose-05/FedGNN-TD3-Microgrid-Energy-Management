@@ -87,11 +87,9 @@ FedGNN-TD3-Microgrid-Energy-Management/
 └── docs/
     ├── architecture.png       ← Framework architecture diagram (placeholder — replace with Fig. 1)
     └── paper_summary.md       ← Methodology summary with equation references
-```
 
----
 
-## Datasets
+Datasets
 
 Three real-world datasets are required. See [`data/README.md`](data/README.md) for download links and placement instructions.
 
@@ -101,25 +99,21 @@ Three real-world datasets are required. See [`data/README.md`](data/README.md) f
 | 2 | **AEMO 2018 NEM Dispatch** | Australian Energy Market Operator | Wind farm dispatch (33 farms), solar dispatch (28 farms), 5-min resolution → price proxy |
 | 3 | **IEEE 33-Bus Benchmark** | Dolatabadi et al., IEEE Trans. Power Syst. 2020 | Bus loads, branch impedances, 24h demand/RES profiles, generator buses |
 
----
+Installation
 
-## Installation
-
-```bash
-# Clone the repository
+bash
+Clone the repository
 git clone https://github.com/YOUR_USERNAME/FedGNN-TD3-Microgrid-Energy-Management.git
 cd FedGNN-TD3-Microgrid-Energy-Management
 
-# Create a virtual environment (recommended)
+Create a virtual environment (recommended)
 python -m venv .venv
 source .venv/bin/activate        # Linux/macOS
-# .venv\Scripts\activate         # Windows
+.venv\Scripts\activate         # Windows
 
-# Install dependencies
+Install dependencies
 pip install -r requirements.txt
-```
 
----
 
 ## Quick Start
 
@@ -169,38 +163,4 @@ reward:
   alpha: 1.0   # operational cost
   beta: 0.5    # RES utilisation
   delta: 50.0  # constraint violation penalty
-```
 
----
-
-## Citing This Work
-
-```bibtex
-@article{lyimo2024fedgnntd3,
-  title   = {{FedGNN-TD3}: A Federated Graph Neural Network and Twin Delayed
-             Deep Reinforcement Learning Framework for Distributed Renewable
-             Energy Management},
-  author  = {Lyimo, Rose Sadiki and Zhao, Pengfei and Hu, Weihao},
-  journal = {IEEE Transactions on ...},
-  year    = {2024},
-  note    = {University of Electronic Science and Technology of China (UESTC)}
-}
-```
-
-Please also acknowledge the datasets used (see `data/README.md` for full citations):
-Ausgrid Solar Home Electricity Data (2012–2013), AEMO NEM Dispatch Data (2018),
-and the Enhanced IEEE 33-Bus Benchmark (Dolatabadi et al., 2020).
-
----
-
-## License
-
-This project is licensed under the MIT License — see [LICENSE](LICENSE).
-
----
-
-## Contact
-
-**Rose Sadiki Lyimo** — School of Mechanical and Electrical Engineering, UESTC, Chengdu 611731, China
-
-Corresponding author: **Weihao Hu** — whu@uestc.edu.cn
