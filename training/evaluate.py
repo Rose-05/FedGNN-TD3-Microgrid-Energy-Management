@@ -1,16 +1,6 @@
 """
 evaluate.py
 ───────────
-Policy evaluation and metric computation.
-
-Implements Equations 21-24 from the paper:
-    C_tot   = sum_t (C_grid_t + C_ESS_t + C_trade_t)             Eq. 21
-    eta_RES = sum(P_RES_used) / sum(P_RES_avail) * 100%          Eq. 22
-    V_rate  = N_viol / N_total * 100%                             Eq. 23
-    T_train = t_end - t_start                                      Eq. 24
-
-Also evaluates baseline policies (rule-based, peak-shift, no-storage) for
-comparison against the trained FedGNN-TD3 policy.
 """
 
 import numpy as np
