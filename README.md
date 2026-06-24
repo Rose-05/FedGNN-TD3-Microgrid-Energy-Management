@@ -89,6 +89,8 @@ FedGNN-TD3-Microgrid-Energy-Management/
     └── paper_summary.md       ← Methodology summary with equation references
 
 
+---
+
 ## Datasets
 
 Three real-world datasets are required. See [`data/README.md`](data/README.md) for download links and placement instructions.
