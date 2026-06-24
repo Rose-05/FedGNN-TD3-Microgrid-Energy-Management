@@ -64,14 +64,14 @@ FedGNN-TD3-Microgrid-Energy-Management/
 │   └── data_mapping.py        ← Map dataset measurements onto bus topology
 │
 ├── models/
-│   ├── gnn_encoder.py         ← GNNLayer, MicrogridGNN (Eqs. 7–8)
-│   ├── td3_agent.py           ← Actor, Critic, ReplayBuffer, TD3Agent (Eqs. 11–13)
-│   └── fedavg.py              ← FedAvg aggregation (Eqs. 14–15)
+│   ├── gnn_encoder.py         ← GNNLayer, MicrogridGNN 
+│   ├── td3_agent.py           ← Actor, Critic, ReplayBuffer, TD3Agent 
+│   └── fedavg.py              ← FedAvg aggregation 
 │
 ├── training/
 │   ├── train_local.py         ← Single-MG local TD3 training loop
 │   ├── train_federated.py     ← Full FedGNN-TD3 Algorithm 1 loop
-│   └── evaluate.py            ← Policy evaluation and metric computation (Eqs. 21–24)
+│   └── evaluate.py            ← Policy evaluation and metric computation 
 │
 ├── results/
 │   ├── figures/               ← Generated publication figures (PNG, 300 DPI)
@@ -80,7 +80,7 @@ FedGNN-TD3-Microgrid-Energy-Management/
 ├── scripts/
   ├── preprocess_ausgrid.py  ← Load and preprocess all three datasets
   ├── run_experiments.py     ← Run full ablation study and benchmark comparisons
-  └── plot_results.py        ← Reproduce all paper figures from saved results
+  └── plot_results.py        ← Reproduce all paper figures 
 
 
 ## Datasets
